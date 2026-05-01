@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Galeria de Imagens</title>
+    <style>
+        
+        #moldura { width: 100%; text-align: center; margin-bottom: 20px; }
+        #imagem-principal { width: 500px; height: 300px; border: 5px solid #ccc; object-fit: cover; }
+        .miniatura { width: 100px; cursor: pointer; margin: 5px; opacity: 0.6; transition: 0.3s; }
+        .miniatura:hover { opacity: 1; }
+    </style>
+</head>
+<body>
+
+    <div id="moldura">
+        <img id="imagem-principal" src="https://via.placeholder.com/500x300?text=Selecione+uma+Foto" alt="Destaque">
+    </div>
+
+    <div id="miniaturas">
+        <img class="miniatura" src="https://picsum.photos/id/10/500/300" onclick="expandir(this)">
+        <img class="miniatura" src="https://picsum.photos/id/20/500/300" onclick="expandir(this)">
+        <img class="miniatura" src="https://picsum.photos/id/30/500/300" onclick="expandir(this)">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
